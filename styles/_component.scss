@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: $card-background;
+  max-width: 325px;
+  border-radius: 1rem;
+  .pic {
+    background-image: linear-gradient(
+        rgba(157, 83, 199, 0.5),
+        rgba(157, 83, 199, 0.5)
+      ),
+      url("../images/image-header-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .card-content {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    margin-top: 0.5rem;
+    gap: 2.5rem;
+  }
+  .card-desc {
+    display: grid;
+    gap: 1rem;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    // padding-top: 3rem;
+
+    .counts {
+      display: grid;
+      gap: 0.4rem;
+    }
+  }
+}
